@@ -1,0 +1,271 @@
+@media only screen {
+	@keyframes blinker {
+		50% { opacity: 0.0; }
+	}
+
+	body > div > header section div {
+		padding-top: 0;
+		font-size: 1rem;
+		display: none;
+	}
+
+	.left,
+	.right {
+		vertical-align: top;
+	}
+
+	content section.left header h2 {
+		color: #009ca1;
+	}
+
+	#content section section header h3 {
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	body > div > header section div {
+		display: block;
+	}
+
+	body > div > header section.left div {
+		padding-right: 3rem;
+	}
+
+	body > div > header section.right div {
+		padding-left: 3rem;
+	}
+
+	#content section .skill-header span {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	body > div > header section div {
+		font-size: 1.3rem;
+	}
+
+	body > div > header section.left div {
+		padding-right: 4rem;
+	}
+
+	body > div > header section.right div {
+		padding-left: 3.75rem;
+	}
+
+	#content section .skill-header span {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body > div > header section div {
+		font-size: 1.5rem;
+	}
+
+	body > div > header section.left div {
+		padding-right: 4.8rem;
+	}
+
+	body > div > header section.right div {
+		padding-left: 4.5rem;
+	}
+
+	#content section .skill span
+
+	#content section .skill-header span {
+		font-size: 1.5rem;
+	}
+}
+
+@media only print {
+	html {
+		font-size: 100%;
+	}
+
+	body {
+		font-size: 1rem;
+		font-family: Helvetica, Arial, sans-serif;
+		background-color: white;
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	p {
+		line-height: 1.15rem;
+	}
+
+	body > div > header {
+		font-family: Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-left: 5%;
+	}
+
+	body > div > header section {
+		display: inline-block;
+		/* width: 50%; */
+	}
+
+	body > div > header section h1 {
+		font-size: 3rem;
+	}
+
+	body > div > header section.left p {
+		text-align: right;
+		padding-right: 0.1em;
+	}
+
+	body > div > header section.right p {
+		text-align: left;
+		padding-left: 0.1em;
+	}
+
+	body > div > header section div {
+		padding-top: 0;
+		font-size: 1rem;
+		display: none;
+	}
+
+	#content div.right {
+		page-break-before: always;
+	}
+
+	.left,
+	.right {
+		vertical-align: top;
+	}
+
+	#content .inner {
+		padding: 5% 5% 0 5%;
+	}
+
+	.right .inner :last-child {
+		margin-bottom: 0 !important;
+	}
+
+	#content > header {
+		padding: 0 5% 0 5%;
+	}
+
+	#objective {
+		margin-bottom: 2rem;
+	}
+
+	#content .inner h1 {
+		font-size: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	#content section,
+	#content .inner > p {
+		margin: 2rem 0;
+	}
+
+	#content .inner > section {
+		margin-bottom: 3rem;
+	}
+
+	#content section header {
+		margin-bottom: 0.75rem;
+	}
+
+	#content section header h2 {
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	#content section header span {
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	#content section p {
+		text-align: justify;
+		margin-bottom: 0.75rem;
+	}
+
+	#content section footer span a {
+		color: black;
+	}
+
+	#content section section {
+		padding: 0 5% 0 5%;
+	}
+
+	#content > header {
+		font-size: 1rem;
+		margin-top: 0.25rem;
+	}
+
+	#content > header a {
+		color: black;
+	}
+
+	#content section section header h3 {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	#content section .skills {
+		display: flex;
+	}
+
+	#content section .skills .column {
+		width: 50%;
+	}
+
+	#content section .skill {
+		width: 100%;
+		margin-bottom: 1rem;
+		vertical-align: middle;
+	}
+
+	#content section .skill-header {
+		display: none;
+	}
+
+	#content section .skill div.skill-star {
+		display: inline-block;
+		vertical-align: middle;
+		background-color: black;
+	}
+
+	#content section .skill-header span {
+		display: inline-block;
+		width: 15%;
+		margin: 0;
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	#content section .skill .skill-3 {
+		width: 48%;
+	}
+
+	#content section .skill .skill-2 {
+		width: 32%;
+	}
+
+	#content section .skill .skill-1 {
+		width: 16%;
+	}
+
+	body > div > footer,
+	#developers_note {
+		display: none;
+	}
+}
