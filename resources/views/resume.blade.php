@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Anthony Atkinson - Polyglot Software Engineer</title>
-	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="styles.css">
 	<style>
         ol, ul {
             list-style: none;
