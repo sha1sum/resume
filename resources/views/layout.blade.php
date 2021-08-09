@@ -374,7 +374,19 @@
             </section>
         </header>
 
-		@yield('content')
+		<div id="content">
+            <header class="left">
+                <a href='mailto:&#097;&#110;&#116;&#104;&#111;&#110;&#121;&#064;&#112;&#111;&#108;&#121;&#103;&#108;&#111;&#116;&#046;&#101;&#110;&#103;&#105;&#110;&#101;&#101;&#114;'>&#097;&#110;&#116;&#104;&#111;&#110;&#121;&#064;&#112;&#111;&#108;&#121;&#103;&#108;&#111;&#116;&#046;&#101;&#110;&#103;&#105;&#110;&#101;&#101;&#114;</a>
+            </header>
+            <header class="right">
+                <a href="tel:&#055;&#050;&#055;&#052;&#056;&#055;&#050;&#054;&#051;&#051;">(727) ITS-CODE (487-2633)</a>
+            </header>
+            <div id="developers_note">
+                &gt; polyglot software engineer<span class="blink">|</span>
+            </div>
+
+            @yield('content')
+        </div>
 
         <footer>
             Looking for a resume? <a href="#" onClick="window.print()">Print this page</a> for a paper-styled version.
