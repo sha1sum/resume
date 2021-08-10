@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Employer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('resume');
+    return view('resume', [
+        'employers' => Employer::orderBy('sort_order', 'ASC')->get()
+    ]);
 });
