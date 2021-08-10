@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Employer;
+use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('resume');
+    return view('resume', [
+        'employers' => Employer::orderBy('sort_order', 'ASC')->get(),
+        'skills' => Skill::orderBy('stars', 'DESC')->orderBy('sort_order', 'ASC')->get()
+    ]);
 });
