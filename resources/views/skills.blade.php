@@ -8,8 +8,6 @@
         list!
     </p>
     <div class="skills">
-        <!-- INLINE-BLOCKS IN FIREFOX AND SOME SAFARI VERSIONS HAVE SPACES IF ANY CHARACTERS
-            EXIST BETWEEN THE CLOSING AND OPENING TAGS OF EACH -->
         <div class="column">
             <div class="skill">
                 <span>
