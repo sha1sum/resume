@@ -10,9 +10,9 @@
     <section>
         <header>
             <h2>{{ $employer->name }}</h2>
-            <div><span>Software Engineering Team Lead</span> &mdash; 2019-2021</div>
-            <div><span>Lead Developer in Test</span> &mdash; 2017-2019</div>
-            <div><span>Server Software Engineer</span> &mdash; 2016-2017</div>
+            @foreach ($employer->positions()->orderBy('end_year', 'DESC')->get() as $position)
+                <div><span>{{ $position->name }}</span> &mdash; {{ $position->start_year }}-{{ $position->end_year }}</div>
+            @endforeach
         </header>
         {!! $employer->description !!}
         <footer>
